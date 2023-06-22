@@ -1,0 +1,22 @@
+<ActionBar title="Rive Demo"> </ActionBar>
+
+<StackLayout>
+  <RiveView
+    #rive
+    src="~/assets/new_favorite_star.riv"
+    width="300"
+    height="300"
+    autoPlay="false"
+    (tap)="playRiveAnimation()"
+  ></RiveView>
+  <Button
+    text="Reset Animation"
+    (tap)="resetAnimation()"
+    style="
+      margin-top: 20vh;
+      background-color: black;
+      color: whitesmoke;
+      border-radius: 16px;
+    "
+  ></Button>
+</StackLayout>
